@@ -1,7 +1,7 @@
-#!/usr/bin/python3
+# #!/usr/bin/python3
 
 errors =[]
-count = 0
+score = 0
 trial = 15
 print(
     """ Welcome to the Exception Chaser Game
@@ -17,35 +17,63 @@ print(
     """
 )
 
-while trial > 0 and count < 10:
+while trial > 0 and score < 5:
     trial -= 1
     command = input(">>> ")
 
     try:
         exec(command)
-        if count != 0:
-            count -= 1
+        if score != 0:
+            score -= 1
 
-        print(f"Score: {count}/5 | Trials left: {trial}")
+        print(f"Score: {score}/5 | Trials left: {trial}")
     except Exception as e:
         exceptionName = e.__class__.__name__
         if exceptionName not in errors:
             errors.append(exceptionName)
-            count += 1
-        elif count > 0:
-            count -= 1
+            score += 1
+        elif score > 0:
+            score -= 1
         else:
-            count 
+            score 
 
-        print(f"Score: {count}/5 | Trials left: {trial}")
+        print(f"Score: {score}/5 | Trials left: {trial}")
         print(f"Exception: {exceptionName}")
     continue
 
-if count == 5:
-    print(f"\nYou win | Final Score: {count}/10")
+if score == 5:
+    print(f"\nYou win | Final Score: {score}/10")
     for i in errors:
         print(f"    - {i}")
 else:
-    print(f"\n Final Score: {count}/10 | You can always give it another shot!")
+    print(f"\n Final Score: {score}/10 | You can always give it another shot!")
     for i in errors:
         print(f"    - {i}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#!/usr/bin/python3
