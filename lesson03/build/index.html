@@ -63,7 +63,10 @@
       <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
       <!-- Our Rockets Section -->
-      <section id="rockets" class="p-6 my-12 scroll-mt-20">
+      <section
+        id="rockets"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
         <h2
           class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
         >
@@ -265,12 +268,17 @@
     </main>
 
     <footer id="footer" class="bg-teal-700 text-white text-xl">
-      <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+      <section
+        class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
         <address>
           <h2>Acme Rocket Products, Inc.</h2>
-          555 Astro Way<br>
-          Fairfield, New Jersey 12345-5555<br>
-          Email: <a href="mailto:inquiries@acmerockets.com">inquiries@acmerockets.com</a><br>
+          555 Astro Way<br />
+          Fairfield, New Jersey 12345-5555<br />
+          Email:
+          <a href="mailto:inquiries@acmerockets.com"
+            >inquiries@acmerockets.com</a
+          ><br />
           Phone: <a href="tel:+15555555555">(555) 555-5555</a>
         </address>
         <nav class="hidden md:flex flex-col gap-2" aria-label="footer">

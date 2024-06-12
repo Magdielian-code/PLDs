@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-    .seection-main-height {
+    .section-min-height {
         min-height: calc(100vh - 68px)
     }
 }
