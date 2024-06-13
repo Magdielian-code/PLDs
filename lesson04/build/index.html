@@ -21,9 +21,11 @@
         <div>
           <button
             id="hamburger-button"
-            class="text-3xl md:hidden cursor-pointer"
+            class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
           >
-            &#9776;
+            <!-- &#9776; -->
+             <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:translate-x-4 before:translate-y-3 before:">
+             </div>
           </button>
           <nav class="hidden md:block space-x-8 text-xl" arial-label="main">
             <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
@@ -38,7 +40,7 @@
         id="mobile-menu"
         class="absolute top-68 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden"
       >
-        <button class="text-8xl self-end px-6">&times;</button>
+        <!-- <button class="text-8xl self-end px-6">&times;</button> -->
         <nav
           class="flex flex-col min-h-screen items-center py-8"
           aria-label="mobile"
