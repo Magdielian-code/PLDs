@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- css link -->
     <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- Javascript link -->
+    <script src="./js/main.js"></script>
 
     <title>Acme Rockets</title>
   </head>
@@ -28,26 +32,54 @@
           </nav>
         </div>
       </section>
-      <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex flex-col justify-content-center">
-        <button class="text-8xl self-end px-6">
-          &times;
-        </button>
-        <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
-            <div class="w-full text-center rounded-t-lg mb-6 bg-black border-0 hover:border-2 hover:border-teal-700">
-              <a href="#hero" class="w-full text-center py-6 hover:opacity-90">Home</a>
-            </div>
-            <div class="w-full text-center mb-6 bg-black border-0 hover:border-2 border-teal-700">
-              <a href="#rockets" class="w-full text-center py-6 hover:opacity-90">Our Rockets</a>
-            </div>
-            <div class="w-full text-center mb-6 bg-black border-0 hover:border-2 border-teal-700">
-              <a href="#testimonials" class="w-full text-center py-6 hover:opacity-90">Testimonials</a>
-            </div>
-            <div class="w-full text-center mb-6 bg-black border-0 hover:border-2 border-teal-700">
-              <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
-            </div>
-            <div class="w-full text-center rounded-b-lg bg-black border-0 hover:border-2 border-teal-700">
-              <a href="#footer" class="w-full text-center py-6 hover:opacity-90">Legal</a>
-            </div>
+
+      <!-- MOBILE MENU -->
+      <section
+        id="mobile-menu"
+        class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <div
+            class="w-full text-center rounded-t-lg mb-6 bg-black border-0 hover:border-2 hover:border-teal-700"
+          >
+            <a href="#hero" class="w-full text-center py-6 hover:opacity-90"
+              >Home</a
+            >
+          </div>
+          <div
+            class="w-full text-center mb-6 bg-black border-0 hover:border-2 border-teal-700"
+          >
+            <a href="#rockets" class="w-full text-center py-6 hover:opacity-90"
+              >Our Rockets</a
+            >
+          </div>
+          <div
+            class="w-full text-center mb-6 bg-black border-0 hover:border-2 border-teal-700"
+          >
+            <a
+              href="#testimonials"
+              class="w-full text-center py-6 hover:opacity-90"
+              >Testimonials</a
+            >
+          </div>
+          <div
+            class="w-full text-center mb-6 bg-black border-0 hover:border-2 border-teal-700"
+          >
+            <a href="#contact" class="w-full text-center py-6 hover:opacity-90"
+              >Contact Us</a
+            >
+          </div>
+          <div
+            class="w-full text-center rounded-b-lg bg-black border-0 hover:border-2 border-teal-700"
+          >
+            <a href="#footer" class="w-full text-center py-6 hover:opacity-90"
+              >Legal</a
+            >
+          </div>
         </nav>
       </section>
     </header>
