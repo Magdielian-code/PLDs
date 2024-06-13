@@ -11,6 +11,7 @@ const initApp = () => {
       // This effectively shows/hides the menu based on current visibility
       mobileMenu.classList.toggle('hidden')
       mobileMenu.classList.toggle('flex')
+      hamburgerBtn.classList.toggle('toggle-btn')
     }
   
     // Click event listener to the hamburger mobile-menu button
