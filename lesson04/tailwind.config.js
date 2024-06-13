@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./build/index.html"],
+  content: ["./build/index.html", "./build/js/*.js"],
   theme: {
     extend: {
       screens: {
@@ -14,7 +14,7 @@ module.exports = {
           '100%': {transform: 'scaleY(1)'},
         }
       },
-      asnimation: {
+      animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
       }
     },
