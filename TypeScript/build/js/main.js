@@ -1,17 +1,29 @@
 "use strict";
+let tc = {
+    name: 'TEECEE',
+    active: true,
+    album: ['huwf', 16536, 'jiuq']
+};
+// Literal types
+// tHIS IS NOT A VARIABLE, THIS IS A DATATYPE CALLED myName
 let myName;
-let meaningOfLife;
-let isLoading;
-let album;
-let dave;
-album = 54;
-dave = 65;
-dave = 'come here';
-dave = true;
-myName = 'Ozioma';
-meaningOfLife = 3;
-isLoading = true;
-console.log('Hi, my name is ' + { myName } + ' and the ' + { meaningOfLife } + 'is' + { isLoading });
-const sum = (a, b) => {
+myName = 'Dave';
+// THIS DATAtype called username
+let userName;
+//
+userName = 'Dave';
+userName = 'John';
+userName = 'TC';
+// Functions
+const add = (a, b) => {
     return a + b;
+};
+const logMsg = (message) => {
+    console.log(message);
+};
+logMsg('Hello');
+console.log(add(2, 5));
+logMsg(add(43, 67));
+let subtract = function (c, d) {
+    return c - d;
 };
