@@ -47,3 +47,30 @@ let subtract = function(c:number, d:number): number {
     return c - d
     
 }
+
+type mathFunction = (a:number, b:number)=> number
+let multipy: mathFunction = function(c,d) {
+  return c * d
+}
+
+//optioal values
+
+const addAll = (a: number, b:number, c?:number): number => {
+  if (typeof c !== 'undefined') {
+    return a + b + c
+  } 
+  return a + b 
+}
+
+const sumAll = (a: number, b:number, c:number = 2): number => {
+  return a + b + c 
+}
+
+logMsg(addAll(2,3,5))
+logMsg(addAll(2,3))
+
+logMsg(sumAll(2,3,5))
+logMsg(sumAll(2,3))
+
+console.log('hello world')
+

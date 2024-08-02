@@ -27,3 +27,21 @@ logMsg(add(43, 67));
 let subtract = function (c, d) {
     return c - d;
 };
+let multipy = function (c, d) {
+    return c * d;
+};
+//optioal values
+const addAll = (a, b, c) => {
+    if (typeof c !== 'undefined') {
+        return a + b + c;
+    }
+    return a + b;
+};
+const sumAll = (a, b, c = 2) => {
+    return a + b + c;
+};
+logMsg(addAll(2, 3, 5));
+logMsg(addAll(2, 3));
+logMsg(sumAll(2, 3, 5));
+logMsg(sumAll(2, 3));
+console.log('hello world');
