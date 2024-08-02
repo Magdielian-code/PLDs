@@ -21,3 +21,17 @@ const z = 1;
 
 */
 
+console.log(y)
+function myFunction() {
+    console.log(y)
+}
+myFunction();
+
+// a global vaiable can be caled from a function but a local variable cannot be called from outside the function
+//  using previous example
+
+function thisFunction() {
+    const y = 67
+    console.log(y)
+}
+thisFunction();
